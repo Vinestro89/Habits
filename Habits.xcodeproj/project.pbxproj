@@ -12,6 +12,7 @@
 		BF45211D26EA785D00D5D0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF45211C26EA785D00D5D0BE /* Assets.xcassets */; };
 		BF45212026EA785D00D5D0BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF45211F26EA785D00D5D0BE /* Preview Assets.xcassets */; };
 		BF45212926EA790300D5D0BE /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45212826EA790300D5D0BE /* Activity.swift */; };
+		BF45212C26EA79DE00D5D0BE /* TrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45212B26EA79DE00D5D0BE /* TrackerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BF45211F26EA785D00D5D0BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF45212126EA785E00D5D0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF45212826EA790300D5D0BE /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		BF45212B26EA79DE00D5D0BE /* TrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		BF45211726EA785C00D5D0BE /* Habits */ = {
 			isa = PBXGroup;
 			children = (
+				BF45212A26EA79C900D5D0BE /* ViewModel */,
 				BF45212726EA78F100D5D0BE /* Model */,
 				BF45211826EA785C00D5D0BE /* HabitsApp.swift */,
 				BF45211A26EA785C00D5D0BE /* ContentView.swift */,
@@ -78,6 +81,14 @@
 				BF45212826EA790300D5D0BE /* Activity.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BF45212A26EA79C900D5D0BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF45212B26EA79DE00D5D0BE /* TrackerViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF45212926EA790300D5D0BE /* Activity.swift in Sources */,
+				BF45212C26EA79DE00D5D0BE /* TrackerViewModel.swift in Sources */,
 				BF45211B26EA785C00D5D0BE /* ContentView.swift in Sources */,
 				BF45211926EA785C00D5D0BE /* HabitsApp.swift in Sources */,
 			);
