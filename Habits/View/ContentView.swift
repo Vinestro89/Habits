@@ -27,6 +27,7 @@ struct ContentView: View {
 						.padding()
 					}
 				}
+				.onDelete(perform: removeActivities)
 			}
 			.navigationTitle("Habits")
 			.navigationBarItems(leading: EditButton(), trailing:
@@ -41,6 +42,10 @@ struct ContentView: View {
 			AddActivityView(tracker: self.tracker)
 		}
     }
+	
+	func removeActivities(at offsets: IndexSet) {
+		tracker.activities.remove(atOffsets: offsets)
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {
