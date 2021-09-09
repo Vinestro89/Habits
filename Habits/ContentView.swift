@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+	
+	@State private var isShowingAddActivity = false
+	@ObservedObject var tracker = TrackerViewModel()
+	
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+		NavigationView {
+			List {
+				ForEach(tracker.activities) { activity in
+					NavigationLink(destination: Text("")) {
+						Text(activity.title)
+							.font(.headline)
+							.padding()
+					}
+				}
+			}
+			.navigationTitle("Habits")
+		}
     }
 }
 
