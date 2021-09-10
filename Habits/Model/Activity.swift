@@ -11,4 +11,5 @@ struct Activity: Identifiable, Codable {
 	var id = UUID()
 	let title: String
 	let description: String
+	var completionCount = 0
 }
